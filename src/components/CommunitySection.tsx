@@ -32,7 +32,7 @@ export function CommunitySection() {
   return (
     <section className="py-24 px-6 bg-slate-950">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl md:text-6xl text-center mb-4 bg-gradient-to-r from-amber-200 via-violet-300 to-amber-200 bg-clip-text text-transparent font-serif">
+        <h2 className="text-5xl md:text-6xl text-center mb-4 bg-gradient-to-r from-amber-200 via-violet-300 to-amber-200 bg-clip-text text-transparent font-serif leading-tight">
           Join Our Community
         </h2>
         <p className="text-xl text-amber-100/60 text-center mb-16">

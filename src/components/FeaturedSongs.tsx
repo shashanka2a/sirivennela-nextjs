@@ -9,22 +9,22 @@ const songs = [
     title: 'Swagatham Krishna',
     subtitle: '(Reimagined)',
     gradient: 'from-indigo-600 to-violet-600',
-    image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrcmlzaG5hJTIwaW5kaWFuJTIwbXVzaWN8ZW58MXx8fHwxNzYxMDQ1NjIxfDA&ixlib=rb-4.1.0&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrcmlzaG5hJTIwaW5kaWFuJTIwY2xhc3NpY2FsJTIwbXVzaWN8ZW58MXx8fHwxNzYxMDQ1NjIxfDA&ixlib=rb-4.1.0&q=80&w=800',
     alt: 'Krishna with Indian classical music instruments'
   },
   {
     title: 'Telisene Naa Nuvve',
     subtitle: '(English Version)',
     gradient: 'from-violet-600 to-amber-600',
-    image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWx1Z3UlMjBtdXNpYyUyMGxvdmUlMjBzb25nfGVufDF8fHwxNzYxMDQ1NjIxfDA&ixlib=rb-4.1.0&q=80&w=800',
-    alt: 'Romantic Telugu music scene'
+    image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb21hbnRpYyUyMGluZGlhbiUyMG11c2ljJTIwbG92ZSUyMHNvbmclMjBzaW5nZXJ8ZW58MXx8fHwxNzYxMDQ1NjIxfDA&ixlib=rb-4.1.0&q=80&w=800',
+    alt: 'Romantic Indian music singer'
   },
   {
     title: 'Samajavaragamana',
     subtitle: '(Cover)',
     gradient: 'from-amber-600 to-indigo-600',
-    image: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWx1Z3UlMjBtb3ZpZSUyMG11c2ljJTIwY2xhc3NpY2FsfGVufDF8fHwxNzYxMDQ1NjIxfDA&ixlib=rb-4.1.0&q=80&w=800',
-    alt: 'Classic Telugu movie music performance'
+    image: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBtb3ZpZSUyMG11c2ljJTIwY2xhc3NpY2FsJTIwcGVyZm9ybWFuY2V8ZW58MXx8fHwxNzYxMDQ1NjIxfDA&ixlib=rb-4.1.0&q=80&w=800',
+    alt: 'Classic Indian movie music performance'
   },
 ];
 
@@ -32,7 +32,7 @@ export function FeaturedSongs() {
   return (
     <section className="py-24 px-6 bg-gradient-to-b from-slate-900 to-slate-800">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl md:text-6xl text-center mb-4 bg-gradient-to-r from-amber-200 via-violet-300 to-amber-200 bg-clip-text text-transparent font-serif">
+        <h2 className="text-5xl md:text-6xl text-center mb-4 bg-gradient-to-r from-amber-200 via-violet-300 to-amber-200 bg-clip-text text-transparent font-serif leading-tight">
           Featured Songs
         </h2>
         <p className="text-xl text-amber-100/60 text-center mb-16">
