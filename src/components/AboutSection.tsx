@@ -22,11 +22,11 @@ export function AboutSection() {
             <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-violet-600 rounded-3xl blur-2xl opacity-20" />
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1594736797933-d0c0b1b0b8b8?ixlib=rb-4.1.0&ixid=kzbvhLjxygs&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&q=80"
-                alt="Black and silver microphone on brown wooden table - studio recording setup"
+                src="/moonlight-mic-illustration.svg"
+                alt="Custom moonlight illustration with microphone - representing Sirivennela's music under the moonlight"
                 className="w-full h-[500px] object-cover"
-                width={1080}
-                height={500}
+                width={400}
+                height={400}
               />
             </div>
           </div>

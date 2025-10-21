@@ -1,0 +1,104 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#312e81;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="moonGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </radialGradient>
+    
+    <linearGradient id="micGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b7280;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4b5563;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow effect for moon -->
+    <filter id="moonGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Glow effect for microphone -->
+    <filter id="micGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background sky -->
+  <rect width="400" height="400" fill="url(#skyGradient)"/>
+  
+  <!-- Stars -->
+  <circle cx="80" cy="60" r="1.5" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="320" cy="80" r="1" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="50" cy="120" r="1" fill="#fbbf24" opacity="0.7"/>
+  <circle cx="350" cy="100" r="1.5" fill="#fbbf24" opacity="0.9"/>
+  <circle cx="120" cy="40" r="1" fill="#fbbf24" opacity="0.5"/>
+  <circle cx="280" cy="50" r="1" fill="#fbbf24" opacity="0.8"/>
+  
+  <!-- Moon -->
+  <circle cx="200" cy="120" r="45" fill="url(#moonGradient)" filter="url(#moonGlow)"/>
+  
+  <!-- Moon craters -->
+  <circle cx="190" cy="110" r="8" fill="#d97706" opacity="0.3"/>
+  <circle cx="210" cy="130" r="5" fill="#d97706" opacity="0.2"/>
+  <circle cx="200" cy="140" r="3" fill="#d97706" opacity="0.4"/>
+  
+  <!-- Moonlight rays -->
+  <g opacity="0.3">
+    <path d="M200 60 L205 75 L200 80 L195 75 Z" fill="#fbbf24"/>
+    <path d="M200 60 L210 70 L205 75 L200 80 Z" fill="#fbbf24"/>
+    <path d="M200 60 L195 70 L200 80 L205 75 Z" fill="#fbbf24"/>
+    <path d="M200 60 L190 65 L195 70 L200 80 Z" fill="#fbbf24"/>
+    <path d="M200 60 L210 65 L205 70 L200 80 Z" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Microphone stand base -->
+  <rect x="195" y="300" width="10" height="20" fill="#374151" rx="2"/>
+  
+  <!-- Microphone stand -->
+  <rect x="198" y="250" width="4" height="50" fill="#4b5563"/>
+  
+  <!-- Microphone body -->
+  <ellipse cx="200" cy="240" rx="12" ry="8" fill="url(#micGradient)" filter="url(#micGlow)"/>
+  
+  <!-- Microphone grill -->
+  <g fill="#1f2937" opacity="0.6">
+    <circle cx="195" cy="240" r="1.5"/>
+    <circle cx="200" cy="240" r="1.5"/>
+    <circle cx="205" cy="240" r="1.5"/>
+    <circle cx="197.5" cy="237" r="1"/>
+    <circle cx="202.5" cy="237" r="1"/>
+    <circle cx="197.5" cy="243" r="1"/>
+    <circle cx="202.5" cy="243" r="1"/>
+  </g>
+  
+  <!-- Microphone cable -->
+  <path d="M208 240 Q220 250 240 260 Q260 270 280 280" stroke="#6b7280" stroke-width="2" fill="none" opacity="0.7"/>
+  
+  <!-- Sound waves from microphone -->
+  <g opacity="0.4">
+    <path d="M220 240 Q230 230 240 240 Q250 250 260 240" stroke="#fbbf24" stroke-width="1.5" fill="none"/>
+    <path d="M225 240 Q240 220 255 240 Q270 260 285 240" stroke="#fbbf24" stroke-width="1" fill="none"/>
+    <path d="M230 240 Q250 210 270 240 Q290 270 310 240" stroke="#fbbf24" stroke-width="0.8" fill="none"/>
+  </g>
+  
+  <!-- Ground/table surface -->
+  <rect x="0" y="320" width="400" height="80" fill="#1e293b" opacity="0.8"/>
+  
+  <!-- Table edge highlight -->
+  <rect x="0" y="320" width="400" height="2" fill="#fbbf24" opacity="0.3"/>
+</svg>
