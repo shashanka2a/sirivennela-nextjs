@@ -22,8 +22,8 @@ export function AboutSection() {
             <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-violet-600 rounded-3xl blur-2xl opacity-20" />
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBtdXNpYyUyMHNpbmdlciUyMHRyYWRpdGlvbmFsJTIwaW5zdHJ1bWVudHxlbnwxfHx8fDE3NjEwNDU2MjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Indian classical music singer with traditional instrument"
+                src="https://images.unsplash.com/photo-1594736797933-d0c0b1b0b8b8?ixlib=rb-4.1.0&ixid=kzbvhLjxygs&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&q=80"
+                alt="Black and silver microphone on brown wooden table - studio recording setup"
                 className="w-full h-[500px] object-cover"
                 width={1080}
                 height={500}

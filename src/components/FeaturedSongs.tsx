@@ -9,22 +9,22 @@ const songs = [
     title: 'Swagatham Krishna',
     subtitle: '(Reimagined)',
     gradient: 'from-indigo-600 to-violet-600',
-    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrcmlzaG5hJTIwaW5kaWFuJTIwY2xhc3NpY2FsJTIwbXVzaWN8ZW58MXx8fHwxNzYxMDQ1NjIxfDA&ixlib=rb-4.1.0&q=80&w=800',
-    alt: 'Krishna with Indian classical music instruments'
+    image: '/1.png',
+    alt: 'Swagatham Krishna album art'
   },
   {
-    title: 'Telisene Naa Nuvve',
+    title: 'Singari Chinnadana',
     subtitle: '(English Version)',
     gradient: 'from-violet-600 to-amber-600',
-    image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb21hbnRpYyUyMGluZGlhbiUyMG11c2ljJTIwbG92ZSUyMHNvbmclMjBzaW5nZXJ8ZW58MXx8fHwxNzYxMDQ1NjIxfDA&ixlib=rb-4.1.0&q=80&w=800',
-    alt: 'Romantic Indian music singer'
+    image: '/2.png',
+    alt: 'Singari Chinnadana album art'
   },
   {
-    title: 'Samajavaragamana',
+    title: 'Neeli Neeli Aakasam',
     subtitle: '(Cover)',
     gradient: 'from-amber-600 to-indigo-600',
-    image: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBtb3ZpZSUyMG11c2ljJTIwY2xhc3NpY2FsJTIwcGVyZm9ybWFuY2V8ZW58MXx8fHwxNzYxMDQ1NjIxfDA&ixlib=rb-4.1.0&q=80&w=800',
-    alt: 'Classic Indian movie music performance'
+    image: '/3.png',
+    alt: 'Neeli Neeli Aakasam album art'
   },
 ];
 
