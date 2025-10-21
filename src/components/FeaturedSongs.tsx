@@ -2,22 +2,29 @@
 
 import { motion } from 'framer-motion';
 import { Card } from './ui/card';
+import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const songs = [
   {
     title: 'Swagatham Krishna',
     subtitle: '(Reimagined)',
     gradient: 'from-indigo-600 to-violet-600',
+    image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrcmlzaG5hJTIwaW5kaWFuJTIwbXVzaWN8ZW58MXx8fHwxNzYxMDQ1NjIxfDA&ixlib=rb-4.1.0&q=80&w=800',
+    alt: 'Krishna with Indian classical music instruments'
   },
   {
     title: 'Telisene Naa Nuvve',
     subtitle: '(English Version)',
     gradient: 'from-violet-600 to-amber-600',
+    image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWx1Z3UlMjBtdXNpYyUyMGxvdmUlMjBzb25nfGVufDF8fHwxNzYxMDQ1NjIxfDA&ixlib=rb-4.1.0&q=80&w=800',
+    alt: 'Romantic Telugu music scene'
   },
   {
     title: 'Samajavaragamana',
     subtitle: '(Cover)',
     gradient: 'from-amber-600 to-indigo-600',
+    image: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWx1Z3UlMjBtb3ZpZSUyMG11c2ljJTIwY2xhc3NpY2FsfGVufDF8fHwxNzYxMDQ1NjIxfDA&ixlib=rb-4.1.0&q=80&w=800',
+    alt: 'Classic Telugu movie music performance'
   },
 ];
 
@@ -43,8 +50,19 @@ export function FeaturedSongs() {
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
             >
               <Card className="relative overflow-hidden rounded-3xl border-0 shadow-xl hover:shadow-2xl transition-all duration-300 group">
-                {/* Gradient Background */}
-                <div className={`h-80 bg-gradient-to-br ${song.gradient} relative`}>
+                {/* Background Image */}
+                <div className="h-80 relative">
+                  <ImageWithFallback
+                    src={song.image}
+                    alt={song.alt}
+                    className="w-full h-full object-cover"
+                    width={800}
+                    height={320}
+                  />
+                  
+                  {/* Gradient overlay */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${song.gradient} opacity-60`} />
+                  
                   {/* Blur overlay for album art effect */}
                   <div className="absolute inset-0 backdrop-blur-sm bg-black/20" />
                   

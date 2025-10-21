@@ -22,8 +22,8 @@ export function AboutSection() {
             <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-violet-600 rounded-3xl blur-2xl opacity-20" />
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1737288307279-93e4ceadf4e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaW5nZXIlMjBzaWxob3VldHRlJTIwZ29sZGVuJTIwbGlnaHR8ZW58MXx8fHwxNzYxMDQ1NjIxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Singer silhouette with golden light"
+                src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaW5nZXIlMjBpbmRpYW4lMjBtdXNpY2lhbCUyMGNsYXNzaWNhbCUyMGluc3RydW1lbnR8ZW58MXx8fHwxNzYxMDQ1NjIxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Indian classical music singer with traditional instrument"
                 className="w-full h-[500px] object-cover"
                 width={1080}
                 height={500}

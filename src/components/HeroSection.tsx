@@ -3,10 +3,23 @@
 import { Moon, Music } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Button } from './ui/button';
+import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-indigo-950 via-violet-900 to-amber-900">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <ImageWithFallback
+          src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb29ubGlnaHQlMjBzaW5nZXIlMjBpbmRpYW4lMjBtdXNpY3xlbnwxMHx8fHwxNzYxMDQ1NjIxfDA&ixlib=rb-4.1.0&q=80&w=1920"
+          alt="Moonlight singer performance"
+          className="w-full h-full object-cover opacity-20"
+          fill={true}
+          priority={true}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-950/80 via-violet-900/80 to-amber-900/80" />
+      </div>
+
       {/* Drifting moonlight particles */}
       <div className="absolute inset-0">
         {[...Array(20)].map((_, i) => (
@@ -96,8 +109,11 @@ export function HeroSection() {
           <Button
             size="lg"
             className="bg-amber-100 text-indigo-950 hover:bg-amber-200 px-8 py-6 text-lg rounded-full shadow-[0_0_40px_rgba(251,191,36,0.4)] hover:shadow-[0_0_60px_rgba(251,191,36,0.6)] transition-all duration-300"
+            asChild
           >
-            Listen on Instagram
+            <a href="https://instagram.com/sirivennela.music" target="_blank" rel="noopener noreferrer">
+              Listen on Instagram
+            </a>
           </Button>
         </motion.div>
       </div>

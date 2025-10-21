@@ -28,6 +28,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: "Sirivennela - Where Words Glow & Tunes Breathe",
     description: "From Swagatham Krishna to Samajavaragamana — Telugu melodies in moonlight.",
